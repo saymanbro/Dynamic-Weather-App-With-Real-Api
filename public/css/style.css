@@ -1,0 +1,221 @@
+:root{
+    --main_bg: #1e272e;
+    --main_color: #0097e6;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@400;900&display=swap');
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: 'Piazzolla', serif;
+};
+
+html{
+    font-size: 62.5%;
+}
+body{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+.main_section{
+    background-color: var(--main_bg);
+}
+.navbar{
+    background-color: var(--main_bg);
+    color: #fff;
+    padding: 1rem 0;
+}
+.navbar li{
+    margin-left: 2rem;
+}
+.navbar a{
+    font-size: 1.3rem;
+    color: #fff;
+}
+.navbar a:hover{
+    color: var(--main_color);
+    transition: all 0.2s ease-out ;
+}
+.fa-snowflake{
+    animation: rot 2s linear infinite;
+    transition: all linear;
+    color: var(--main_color);
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.navbar-toggler{
+    background-color:gray;
+}
+.left_side_data{
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.left_side_data p{
+    font-size: 1rem;
+}
+.left_side_data h1{
+    font-size: 2rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+.w_color{
+    color: var(--main_color);
+}
+.check_btn{
+    border:none;
+    font-size: .9rem;
+    padding: .5rem 1.2rem;
+    border-radius:  2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+}
+.check_btn:hover{
+    box-shadow: 0 8px 6px -6px var(--main_color);
+}
+.right_side_data{
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+};
+/* Footer */
+.footer_section{
+    width:100%;
+    background-color:var(--main_bg)
+  
+}
+.footer_section p{
+    font-size: 1rem;
+    text-align: center;
+    line-height:5rem;
+    color: black;
+    margin: 0;
+} ;
+/* responsive code  */
+@media (max-width:768px){
+         .left_side_data{
+            height:25rem;
+            margin:3rem 0;
+        };
+        .right_side_data{
+            height:25rem;
+            margin-top:3rem;
+        }
+}
+.girl_img{
+    filter: drop-shadow(0 .5rem 1rem rgba(0,0,0,0.3));
+    width: 350px;
+}
+
+/* Weather page css */
+.temp_form{
+    width:60%;
+    position:relative;
+    margin: 10rem auto 6rem;
+}
+.temp_form input[type='text']{
+    width: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    background-color: #1e202b;
+    color: #fff;
+    outline:none !important;
+    border: none !important;
+    font-size: 1rem;
+    border-radius: 3rem;
+
+    
+}
+::placeholder{
+    color: #bfc1c8;
+}
+.temp_form input[type='submit']{
+    position:absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    background-color: #009ad8;
+    padding: 0 2rem;
+    border-radius: 3rem;
+    color: #fff;
+    font-size:1rem;
+    outline:none !important;
+    border: none !important;
+
+}
+.tempInformation{
+    width: 20rem;
+    margin: auto;
+    min-height:15rem;
+    background-color:#323544;
+    border-radius: 1rem;
+    padding:.5rem;
+    border: 1px solid cyan;
+    
+};
+.top_layer{
+    width: 100vw;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:1rem;
+    background-color: red;
+    padding: 1rem .6rem;
+}
+.top_layer p{
+    color: #fff;
+    font-weight: 300;
+    padding:5px 5px;
+}
+.main_layer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.main_layer #city_name{
+    padding: 1rem 0;
+    color: #fff;
+    font-weight:300;
+    font-size:1.4rem;
+}
+.main_layer .middle_layer{
+    display: flex;
+    justify-content:space-between;
+    color: #fff;
+};
+.main_layer p, 
+.main_layer .middle_layer .fa{
+    font-size:3rem;
+    font-weight:600
+}
+.fa{
+    color: cyan;
+}
+.middle_layer p{
+    font-size:2rem;
+}
+sup{
+    font-size:2rem;
+    margin-top:-2rem
+}
+.data_hide{
+    visibility: hidden;
+    transition:all .3s linear
+}
+#date{
+    color: #fff;
+    font-size: 1rem;
+}

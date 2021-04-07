@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>headerLinks}}
+<body>
+     {{>navbar}}
+
+            <!-- Main header -->
+            <div class="container-fluid main_header">
+               <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="row ">
+                        <!-- left side Data -->
+                        <div class="col-md-6 col-12 left_side_data"> 
+                            <p>Welcome to Global Weather Site</p>
+                            <h1>Get The latest <span class='w_color'>Weather</span> Info of Your City </h1>
+                            <a href="/wather"><button class='check_btn'>Check Now</button></a>
+                       </div>
+                        <!-- right side Data -->
+                        <div class="col-md-6 col-12 right_side_data">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="image/bestImg1.jpg" class="w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="image/bestImg1.jpg" class="w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="image/bestImg1.jpg" class="w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                       </div>
+                     </div>
+                   </div>
+               </div>
+           </div>
+
+
+       {{>footer}}
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<script>
+    const dev_year = document.getElementById("site_dev_time");
+    let d = new Date();
+   const year =  d.getFullYear();
+   dev_year.innerHTML= year;
+</script>
+</body>
+</html>

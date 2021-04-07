@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>headerLinks}}
+<body>
+    {{>navbar}}
+            <!-- Main header -->
+            <div class="container-fluid main_header">
+               <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="row ">
+                        <!-- left side Data -->
+                        <div class="col-md-6 col-12 left_side_data">
+                        <figure>
+                            <img src="image/girl.png" alt="" class='img-fluid girl_img'>
+                   
+                        </figure>
+                    </div>
+                          <!-- right side Data -->
+                        <div class="col-md-6 col-12 right_side_data"> 
+                            <p>Welcome to Global Weather Site</p>
+                            <h1>I Am A <span class='w_color'>MERN STACK</span> Developer </h1>
+                            <a href="/wather"><button class='check_btn'>About Me</button></a>
+                       </div>
+                       
+                     </div>
+                   </div>
+               </div>
+           </div>
+
+
+           {{>footer}}
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<script>
+    const dev_year = document.getElementById("site_dev_time");
+    let d = new Date();
+   const year =  d.getFullYear();
+   dev_year.innerHTML= year;
+</script>
+</body>
+</html>
